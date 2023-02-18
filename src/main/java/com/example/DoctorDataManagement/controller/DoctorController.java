@@ -29,7 +29,7 @@ public class DoctorController {
 //      return  null ;
 //    }
     //------------------------------------------------------------
-
+//testing
     @PostMapping("/add-doctor")
     public ResponseEntity<String>saveDoctor(@RequestBody String requestDoctor){
         JSONObject json=new JSONObject(requestDoctor);
