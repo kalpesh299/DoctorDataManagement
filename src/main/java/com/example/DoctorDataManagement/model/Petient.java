@@ -1,11 +1,17 @@
 package com.example.DoctorDataManagement.model;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.sql.Timestamp;
 
 @Entity
 @Table(name="tbl_petient")
+@AllArgsConstructor
+@NoArgsConstructor
+@Data
 public class Petient {
 
     @Id
