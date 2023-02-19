@@ -30,6 +30,8 @@ public class DoctorController {
 //    }
     //------------------------------------------------------------
 //testing
+
+    //http://localhost:8080/add-doctor
     @PostMapping("/add-doctor")
     public ResponseEntity<String>saveDoctor(@RequestBody String requestDoctor){
         JSONObject json=new JSONObject(requestDoctor);
@@ -42,6 +44,7 @@ public class DoctorController {
          return new ResponseEntity<>("Bad Request Entor All mendtory details", HttpStatus.BAD_REQUEST);
     }
 
+    //http://localhost:8080/get-doctor
     @GetMapping("/get-doctor")
     public List <Doctor>getDoctor(@Nullable @RequestParam String doctorId){
         return service.getDoctor(doctorId);
@@ -73,6 +76,7 @@ public class DoctorController {
 
        if(json.has("experience")){
            String experience=json.getString("experience");
+           doctor.setExcperience(experience);
        }
 
   return doctor;

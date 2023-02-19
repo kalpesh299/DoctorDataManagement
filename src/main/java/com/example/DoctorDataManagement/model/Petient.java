@@ -16,7 +16,7 @@ public class Petient {
 
     @Id
     @Column(name="petient_id")
-    private String petientId;
+    private Integer petientId;
 
     @Column(name="petient_name")
     private String petientName;
