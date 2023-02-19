@@ -22,7 +22,7 @@ public class Doctor {
     private String doctorName;
 
 
-    @Column(name="experience")
+    @Column(name="dr_experience")
     private String excperience;
 
     @Column(name="specialization_in")

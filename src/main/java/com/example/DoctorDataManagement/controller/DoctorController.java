@@ -74,8 +74,8 @@ public class DoctorController {
            return null;
        }
 
-       if(json.has("experience")){
-           String experience=json.getString("experience");
+       if(json.has("excperience")){
+           String experience=json.getString("excperience");
            doctor.setExcperience(experience);
        }
 
